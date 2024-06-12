@@ -30,3 +30,47 @@ How to attempt this challenge:
 
 You must follow these steps for your solution to be accepted -- forks or other methods will not be considered.
 
+## Step-by-Step Solution to resolve this challenge
+
+### Checkout the First Feature Branch:
+```
+    git checkout feature/base64
+```
+### Rebase the First Feature Branch onto Master:
+```
+    git rebase master
+```
+### Switch Back to the Master Branch:
+```
+    git checkout master
+```
+### Merge the Rebasing Result into Master:
+```
+    git merge feature/base64
+```
+### Checkout the Second Feature Branch:
+```
+    git checkout feature/useragent
+```
+### Rebase the Second Feature Branch onto Master:
+```
+    git rebase master
+```
+### Resolve the Conflicts
+### Switch Back to the Master Branch:
+```
+    git checkout master
+```
+### Merge the Rebasing Result into Master:
+```
+    git merge feature/useragent
+```
+### Verify the Commit Order:
+```
+    git log --oneline
+```
+### Push the Changes to the Remote Repository:
+```
+    git push origin master
+```
+
